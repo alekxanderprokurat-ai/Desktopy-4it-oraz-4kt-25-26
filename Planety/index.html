@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planety</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="tabela">
+        <table id="dane">
+            <tr>
+                <td><img src="merkury.png" id="merkury" onclick="merkury()"></td>
+                <td><img src="wenus.png" id="wenus" onclick="wenus()"></td>
+                <td><img src="ziemia.png" id="ziemia" onclick="ziemia()"></td>
+                <td><img src="mars.png" id="mars" onclick="mars()"></td>
+                <td><img src="jowisz.png" id="jowisz" onclick="jowisz()"></td>
+            </tr>
+        </table>
+    </div>
+    <div id="wynik"></div>
+    <div id="tresc"></div>
+
+    <script>
+        function merkury(){
+            document.getElementById("wynik").innerHTML="Merkury";
+            document.getElementById("tresc").innerHTML="Merkury – najmniejsza i najbliższa Słońcu planeta. Ma bardzo cienką atmosferę i duże wahania temperatury między dniem a nocą.";
+        }
+        function wenus(){
+            document.getElementById("wynik").innerHTML="Wenus";
+            document.getElementById("tresc").innerHTML="Wenus – druga planeta od Słońca, podobna rozmiarem do Ziemi, ale z gęstą atmosferą z dwutlenku węgla i ekstremalnym upałem.";
+        }
+        function ziemia(){
+            document.getElementById("wynik").innerHTML="Ziemia";
+            document.getElementById("tresc").innerHTML="Ziemia – trzecia planeta od Słońca, jedyna znana z życiem. Ma wodę w stanie ciekłym i odpowiednią atmosferę do jego podtrzymania.";
+        }
+        function mars(){
+            document.getElementById("wynik").innerHTML="Mars";
+            document.getElementById("tresc").innerHTML="Mars – czwarta planeta, zwana Czerwoną Planetą z powodu tlenku żelaza na powierzchni. Ma cienką atmosferę i ślady dawnych rzek.";
+        }
+        function jowisz(){
+            document.getElementById("wynik").innerHTML="Jowisz";
+            document.getElementById("tresc").innerHTML="Jowisz – piąta i największa planeta w Układzie Słonecznym, gazowy olbrzym z potężnymi burzami i wieloma księżycami, m.in. Ganimedesem.";
+        }
+    </script>
+</body>
+</html>

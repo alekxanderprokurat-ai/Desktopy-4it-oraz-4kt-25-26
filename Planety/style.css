@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#tabela {
+    background-color: #a9d18e; 
+    padding: 20px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+#tabela img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#tabela img:hover {
+    transform: scale(1.1);
+}
+
+#wynik {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #2f5597;
+}
+
+#tresc {
+    width: 60%;
+    margin: 10px auto;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #333333;
+}

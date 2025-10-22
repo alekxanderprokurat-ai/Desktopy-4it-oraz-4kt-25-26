@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="podaj_imie()">
+    <script>
+        function podaj_imie(){
+            var imie = prompt("Jak masz na imię?");
+            var tekst;
+
+            if (imie == null || imie.trim() === "") {
+                document.write("Miło, że jesteś z nami!");
+            } else {
+                document.write("Miło, że jesteś z nami " + imie + "!");
+            }
+
+           
+        }
+    </script>
+</body>
+</html>
